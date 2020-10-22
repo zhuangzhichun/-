@@ -3,8 +3,8 @@
   <div>
     <div class="profile">
       <HeaderTop title="我的"></HeaderTop>
-      <section class="profile-number">
-        <a href="javascript:" class="profile-link">
+      <div class="profile-number">
+        <router-link to="/login" class="profile-link">
           <div class="profile_image">
             <i class="iconfont icon-personal"></i>
           </div>
@@ -19,9 +19,9 @@
           </div>
           <span class="arrow">
               <i class="iconfont icon-icon-jiantou1"></i>
-            </span>
-        </a>
-      </section>
+          </span>
+        </router-link>
+      </div>
       <section class="profile_info_data border-1px">
         <ul class="info_data_list">
           <a href="javascript:" class="info_data_link">
@@ -107,7 +107,7 @@
   @import "../../common/stylus/mixins.styl";
   .profile //我的
     width 100%
-
+    overflow hidden
     .profile-number
       margin-top 45.5px
       .profile-link
