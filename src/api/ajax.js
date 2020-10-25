@@ -1,5 +1,6 @@
 /*
 ajax请求函数模块
+前端拦截器
  */
 import axios from 'axios'
 export default function ajax(url,data={},type='GET') {
